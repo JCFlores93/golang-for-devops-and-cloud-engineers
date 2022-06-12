@@ -36,7 +36,7 @@ func (o Occurrence) GetResponse() string {
 	return fmt.Sprintf("%s", strings.Join(out, ", "))
 }
 
-func (a API) DoRequest(requestURL string) (Response, error) {
+func (a api) DoRequest(requestURL string) (Response, error) {
 
 	response, err := a.Client.Get(requestURL)
 
